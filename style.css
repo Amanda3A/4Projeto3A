@@ -1,0 +1,252 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #aaa;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+#sobre img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 2em;
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+}
+
+footer {
+    background-color: #222;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #aaa;
+}
+
+#albuns ul li img {
+    width: 300px;
+    height: 300px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 50;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.album-capa {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.album-info {
+    flex: 1;
+}
+
+.integrante-foto {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.integrante-info {
+    flex: 1;
+}
+
+.ex-integrante-foto {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.carousel {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.carousel-image.active {
+    display: block;
+}
+
+.album-capa {
+    transition: transform 0.3s ease;
+}
+
+.album-capa:hover {
+    transform: scale(1.1);
+}
+
+.album-capa {
+    transition: transform 0.3s ease;
+}
+
+.album-capa {
+    transition: transform 0.3s ease;
+}
+
+.album-capa:hover {
+    animation: pulse 0.6s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+nav a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 2px;
+    background-color: #aaa;
+    animation: shine 0.5s forwards;
+}
+
+@keyframes shine {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+.album-capa, .integrante-foto {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.album-capa:hover, .integrante-foto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.album-capa, .ex-integrante-foto {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.album-capa:hover, .ex-integrante-foto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    color: #fff;
+    text-shadow: 0 0 5px #696969, 0 0 10px #696969, 0 0 20px #696969;
+    animation: neon 1.5s infinite alternate;
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 5px #696969, 0 0 10px #696969, 0 0 15px #696969;
+    }
+    to {
+        text-shadow: 0 0 10px #aaa, 0 0 20px #aaa, 0 0 30px #aaa;
+    }
+}
+
+body {
+    background: linear-gradient(270deg, #696969, #aaa, #696969);
+    background-size: 600% 600%;
+    animation: gradientBackground 15s ease infinite;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
